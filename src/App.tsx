@@ -1,12 +1,10 @@
-import React from 'react';
-import './App.css'
-import AppRouter from './products/AppRouter';
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import Navbar from './Navbar';
+import AppRouter from './products/AppRouter';
 
 function App() {
   return (
-    <Box>
+    <Box style={{height: '100vh'}}>
       <Navbar />
       <AppRouter />
     </Box>
