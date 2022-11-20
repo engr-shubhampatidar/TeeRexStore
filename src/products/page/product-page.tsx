@@ -92,7 +92,13 @@ function ProductPage() {
           <Filter setfilterAttribute={setfilterAttribute} />
         </Item>
       </Grid>
-      <Grid item md={8} display="flex" direction="column" alignItems="center">
+      <Grid
+        item
+        md={8}
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
         <Grid container spacing={2} flexDirection="column" alignItems="center">
           <Grid item xs={12} md={6}>
             <TextField
