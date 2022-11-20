@@ -1,12 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
 function Checkout() {
-    return (
-        <div>Checkout</div>
-    )
+  return <div>Checkout</div>;
 }
 
-Checkout.propTypes = {}
-
-export default Checkout
+export default Checkout;
