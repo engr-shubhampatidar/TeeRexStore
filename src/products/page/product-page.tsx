@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import { IconButton, TextField } from "@mui/material";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import { IconButton, TextField } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import { useEffect, useState } from "react";
+import { Product } from "../../models/product";
+import { Filter } from "../component/Filter";
 import ProductCard from "../component/product-card";
 import useApi from "../services/use-api";
-import { Filter } from "../component/Filter";
-import { Product } from "../../models/product";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#edf2f4cc",
@@ -127,7 +125,5 @@ function ProductPage() {
     </Grid>
   );
 }
-
-ProductPage.propTypes = {};
 
 export default ProductPage;

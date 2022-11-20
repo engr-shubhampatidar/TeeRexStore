@@ -3,7 +3,6 @@ import {
   FormControlLabel,
   Checkbox,
   Box,
-  Typography,
   styled,
   FormLabel,
 } from "@mui/material";
@@ -14,11 +13,6 @@ export const Filter = ({ setfilterAttribute }) => {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-  });
-
-  const STypography = styled(Typography)({
-    fontSize: "1.6rem",
-    fontWeight: "700",
   });
 
   const CFormLabel = styled(FormLabel)({
