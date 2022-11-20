@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 // useApi<{ students: Person[] }>({ url: "get-homeboard-students" })
 function ProductPage() {
-  const { response, loading, error } = useApi({
+  const { response, loading } = useApi({
     method: "get",
     url: "/coding-problems/shopping-cart/catalogue.json",
   });
