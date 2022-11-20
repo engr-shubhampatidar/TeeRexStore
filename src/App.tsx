@@ -1,15 +1,14 @@
-import React from 'react';
-import './App.css'
-import AppRouter from './products/AppRouter';
-import { Box } from '@mui/system';
-import Navbar from './Navbar';
+import { Box } from "@mui/material";
+import React from "react";
+import AppRouter from "./products/AppRouter";
 
 function App() {
   return (
-    <Box>
-      <Navbar />
-      <AppRouter />
-    </Box>
+    <React.StrictMode>
+      <Box style={{ height: "100vh" }}>
+        <AppRouter />
+      </Box>
+    </React.StrictMode>
   );
 }
 

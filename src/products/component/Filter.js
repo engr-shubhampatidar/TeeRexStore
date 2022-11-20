@@ -1,18 +1,24 @@
 import {
-  Box,
-  Checkbox,
-  FormControlLabel,
   FormGroup,
-  FormLabel,
+  FormControlLabel,
+  Checkbox,
+  Box,
+  Typography,
   styled,
+  FormLabel,
 } from "@mui/material";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const Filter = ({ setfilterAttribute }) => {
   const SBox = styled(Box)({
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
+  });
+
+  const STypography = styled(Typography)({
+    fontSize: "1.6rem",
+    fontWeight: "700",
   });
 
   const CFormLabel = styled(FormLabel)({
